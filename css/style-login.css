@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 100%;
+    right: 100%;
+    background: linear-gradient(180deg, #00AEC7 0%, #32B8CB 0.01%, #FFFFFF 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+main {
+    
+}
+
+.container-banner {
+    padding-top: 100px;
+    margin:auto;
+    width: 500px;
+    right: 500px;
+}
+
+.banner {
+    
+    
+}
+
+.conteudo-banner {
+    background-image: url(../img/Group\ 3\ 500px.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    
+}
+
+.conteudo-banner img{
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo-banner h1{
+   display: flex;
+   justify-content: center;
+}
+
+.container-banner{
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-bottom: 120px;
+}
+
+.cadastro {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.cadastro h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.cadastro h4 {
+    display: flex;
+    font-size: 10px;
+}
+
+.cadastro button {
+    right: 10%;
+    height: 10%;
+}
