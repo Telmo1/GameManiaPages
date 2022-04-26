@@ -25,6 +25,7 @@
                     
         </nav>
         <a href="#" onclick="mostrarMenu()"><i id ='fas' class="fas fa-bars"></i></a>
+        <!-- <a href="#" id="barras"><i id ='fas' class="fas fa-bars"></i></a> -->
     </div>
     </header>
     <main>
@@ -34,8 +35,28 @@
                 <input type="text" name="search" id="search" placeholder="Faça sua busca" required>
                 <button id = "pesquisa" onclick = "pesquisarNewletter()" type="submit"><i class="fas fa-search"></i></button> 
             </div>
-            <div class="banner-principal">
-                <img src="img/Banner 1.png" alt="">
+            <div class="banner">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Banner 1.png" class="d-block w-100" alt="imagem1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/B2Controle.png" class="d-block w-100" alt="imagem2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/B3mario.png" class="d-block w-100" alt="imagem3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
             <div class="legenda"><h2>Promoções de verão</h2></div>
             <div class="banner-oferta">

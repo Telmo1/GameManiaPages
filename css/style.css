@@ -57,17 +57,34 @@ header {
 
 
 
-
 main {
     right: 100%;
     height: 2300px;
 
 }
 
-.banner-principal img{
+#carouselExampleControls {
     width: 100%;
-    display: block;
+    height: 100%;
 }
+/* 
+.banner-dupla {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/Banner\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+} */
+/* 
+.banner-controle {
+background-image: url(../img/B2Controle.png);
+}
+
+.banner-mario{
+background-image: url(../img/B3mario.png);
+} */
 
 .barra-pesquisa {
     display: flex;
@@ -169,15 +186,20 @@ footer {
 
     .menu {
         height: 200px;
-        display: none;
+        width: 200px;
+        display: flex;
         flex-direction: column;
         background-color: #424141;
-        align-items: center;
+       align-items: center;
         position: absolute;
         top: 100px;
         right: 100px;
     }
 
+    .menu-ativo {
+        display:flex;
+    }
+    
 }
 
 @media screen and (min-width : 1100px) {
