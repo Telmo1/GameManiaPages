@@ -7,203 +7,97 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(180deg, #294C6C 0%, #E1E6F2 100%);
-    background-repeat: no-repeat;
-    height: 2700px;
-}
-header {
-    background-color: #F0CCC6;
-    height: 180px;
-}
-
-
-.cabecalho {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    height: 100%; /*VAI DEIXAR A DIV DA MESMA ALTURA DO HEADER, AJUSTANDO SEMPRE COM A ALTERAÇÃO DE TAMANHO, 100% DA ALTURA DO ELEMENTO PAI DELE*/
-
-}
-
-.cabecalho h1 {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Red Hat Mono', monospace;
-}
-
-.cabecalho a {
-  
-}
-
-.menu {
-    width: 650px;            /*DEFINE UMA ALARGURA PARA O MENU */
-    display: flex;  
-    justify-content: space-around;
-    align-items: flex-end;
-    
-
-}
-
-.menu a {
-    color: black;        /* TROCA A COR DA TELA */
-    text-decoration: none;  /*CANCELA QUALQUER DECORAÇÃO QUE A CELULA TINHA ANTES */
-    font-size: 20px;          /*ALTERA O TAMNAHO DAS LETARS EM PIXELS */
-    text-transform: uppercase; /*VAI DEIXAR TODAS AS LETRAS MAIUSCULAS */
-    font-family: 'Red Hat Mono', monospace;  /* TRAS A FAMILIA DA FONTE UTILIZADA */
-
-}
-
-
-
-
-main {
-    right: 100%;
-    height: 2300px;
-
-}
-
-#carouselExampleControls {
-    width: 100%;
+html, body {
     height: 100%;
-}
-/* 
-.banner-dupla {
-    width: 100%;
-    height: 250px;
-    background-image: url(../img/Banner\ 1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-} */
-/* 
-.banner-controle {
-background-image: url(../img/B2Controle.png);
+    background-color: rgb(146, 243, 243);
 }
 
-.banner-mario{
-background-image: url(../img/B3mario.png);
-} */
-
-.barra-pesquisa {
+.container-cabecalho {
+    height: 150px;
+    width: 100vw;
+    padding: 4vw;
+    background-color: aqua;
+    align-items: center;
     display: flex;
-    flex-direction: row-reverse;
-    padding: 20px;
-}
-
-.barra-pesquisa input{
-    width: 590px;
-    height: 30px;
-}
-   
-.barra-pesquisa input, button{
-    background-color: white;
-    border: none;
-    border-radius: 2px;
+    justify-content: space-around;
+    text-decoration: none;
     color: black;
 }
 
-.legenda{
+.container-cabecalho a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo-nome {
+   display: flex;
+   align-items: center;
+   text-transform: uppercase;
+   font-family: 'Red Hat Mono', monospace;
+   padding-right: 280px;
+}
+
+.menu {
+    font-family: 'Red Hat Mono', monospace;
+    padding: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.main {
+    width: 2700px;
+}
+
+.barra-pesquisa {
     display: flex;
     justify-content: center;
-    color: white;
-    font-size: 20px;
-    padding-top: 30px;
-    font-family: 'Red Hat Mono', monospace;
-    
-}
-.banner-oferta {
-    
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.banner-oferta img {
-    
-    justify-content: center;
-    padding: 40px;
-}
-
-
-.montepc {
-    background-color: #F0CCC6;
-
-    height: 150px;
-    right: 100%;
-    
-}
-    
-.conteudo-banner02 {
-    font-size: 12px;
-    font-family: 'Red Hat Mono', monospace;
-    justify-content: center;
-    padding-bottom: 50px;
-
-}
-
-.imagens img {
     align-items: center;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding: 1%;
 }
 
-footer {
-   
-    
+.bpesquisa {
+    width: 600px;
 }
 
-.topicos-informacoes {
-    
-    
+.carousel {
+    border-radius: 5px;
+}
 
+.legenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.banner-oferta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-banner02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .informacoes {
     display: flex;
-    height: 100%;
-    padding: 5px;
     justify-content: space-between;
-    color: #424141;
-    font-size: 15px;
-    font-family: 'Red Hat Mono', monospace;
-}
-
-.topicos-informacoes ul {
-    
-}
-
-.selos img {
-    width: 10px;
-    height: 10px;
-}
-
-@media screen and (max-width : 1100px){ 
-    .cabecalho{
-        position: relative;
-
-    }
-
-    .menu {
-        height: 200px;
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        background-color: #424141;
-       align-items: center;
-        position: absolute;
-        top: 100px;
-        right: 100px;
-    }
-
-    .menu-ativo {
-        display:flex;
-    }
-    
-}
-
-@media screen and (min-width : 1100px) {
-    #fas{
-        display: none;
-    }
+    padding: 1%;
 }
